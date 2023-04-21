@@ -17,7 +17,7 @@ struct Cli {
 }
 fn main() {
     let args = Cli::from_args();
-    let default_dir = ["router", "handler", "service", "dao"];
+    let default_dir = ["router", "handler", "service"];
     let home_path = env::current_dir().unwrap();
     for i in default_dir {
         let mut path = home_path.join(i.to_string());
